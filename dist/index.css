@@ -1,0 +1,162 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  scroll-snap-type: y mandatory;
+  width: 100%;
+  max-height: 100vh;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+
+.nav-items a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-items a:not(:first-child) {
+  margin-left: 10px;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.models {
+  height: 100vh;
+  background-image: url("../img/ModelS.jfif");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.model3 {
+  height: 100vh;
+  background-image: url("../img/Model3.jfif");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.modelx {
+  height: 100vh;
+  background-image: url("../img/ModelX.jfif");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.modely {
+  height: 100vh;
+  background-image: url("../img/ModelY.jfif");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.solarRoof {
+  height: 100vh;
+  background-image: url("../img/SolarRoof.jfif");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.solarPanels {
+  height: 100vh;
+  background-image: url("../img/SolarPanels.jfif");
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.models .text {
+  opacity: 0;
+  transition: 1500ms;
+}
+
+.model3 .text {
+  opacity: 0;
+  transition: 1500ms;
+}
+
+.modelx .text {
+  opacity: 0;
+  transition: 1500ms;
+}
+
+.modely .text {
+  opacity: 0;
+  transition: 1500ms;
+}
+
+.solarRoof .text {
+  opacity: 0;
+  transition: 1500ms;
+}
+
+.solarPanels .text {
+  opacity: 0;
+  transition: 1500ms;
+}
+
+.models:hover .text {
+  opacity: 1 !important;
+  transition: 1500ms;
+}
+
+.model3:hover .text {
+  opacity: 1 !important;
+  transition: 1500ms;
+}
+
+.modelx:hover .text {
+  opacity: 1 !important;
+  transition: 1500ms;
+}
+
+.modely:hover .text {
+  opacity: 1 !important;
+  transition: 1500ms;
+}
+
+.solarRoof:hover .text {
+  opacity: 1 !important;
+  transition: 1500ms;
+}
+
+.solarPanels:hover .text {
+  opacity: 1 !important;
+  transition: 1500ms;
+}
+
+.text {
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 0);
+}
+
+.text h1 {
+  font-size: 40px;
+  color: #393c41;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.text p {
+  font-size: 20px;
+  color: #5c5e62;
+  padding: 0;
+  margin: 0;
+}
